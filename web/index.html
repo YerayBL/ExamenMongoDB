@@ -1,0 +1,60 @@
+<html>
+    <head>
+            <title>Exámen MongoDB</title>
+        <link rel="icon" type="image/png" href="img/logo.png" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+        <script src="js/index.js"></script>
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/jquery.toast.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/jquery.toast.min.css" />
+    </head>
+    <body>
+        
+        <div id="contenedorPrincipal" class="container">
+            <div class="header">
+                
+                <h1>Exámen MongoDB</h1>
+               
+                <h3>Realice uno de <br>los siguientes exámenes</h3>  
+            </div>    
+
+            <form id="myForm" class="text-center">
+                <div class="form-group">
+                    <label for="inpDNI">DNI / NIF</label>
+                    <input type="text" class="form-control" placeholder="Introduzca el DNI / NIF"  maxlength="10" id="inpDNI" pattern="(([X-Z]{1})([-]?)(\d{7})([-]?)([A-Z]{1}))|((\d{8})([-]?)([A-Z]{1}))" title="00000000Z / X0000000X" required>
+                </div>
+                <div class="form-group">
+                    <label for="selectExamenes">Elige un exámen</label>
+                    <select class="form-control" id="selectExamenes">
+                    </select>
+                </div>
+                <button type="button"  id="btnResulados">Notas</button>
+                <button type="submit" form="myForm" id="btnHacerTest" >Exámen</button>
+            </form>
+        </div>
+
+        <div class="modal fade" id="modalTest">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Hacer Exámen</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Revise el formulario antes de continuar</p>
+                        <p>¿Quiere continuar al exámen seleccionado?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnConfirmarTest">Sí</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

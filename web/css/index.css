@@ -1,0 +1,110 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0299ea; 
+    background: -webkit-linear-gradient(to right, #bbe9f7, #0299ea);  
+    background: linear-gradient(to right,  #bbe9f7, #0299ea); 
+    font-family: "Times New Roman", Times, serif;
+}
+
+.header {
+    text-align: center;
+    color: wheat;
+    background-color: #1051b2;
+    -webkit-box-shadow: 0px 12px 22px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 12px 22px 5px rgba(0,0,0,0.75);
+    box-shadow: 0px 12px 22px 5px rgba(0,0,0,0.75);
+    position: relative;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+.header h1 {
+    font-weight: bold;
+    font-size: 5vw;
+}
+
+.header h3 {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.header img, .header h1 {
+    display: inline;
+}
+
+
+label {
+    color: white;
+    font-size: 1.5em;
+}
+
+input, select{
+    -webkit-box-shadow: 0px 8px 22px -1px rgba(0,0,0,0.75) !important;
+    -moz-box-shadow: 0px 8px 22px -1px rgba(0,0,0,0.75) !important;
+    box-shadow: 0px 8px 22px -1px rgba(0,0,0,0.75) !important;
+    width: 60% !important;
+    text-align: center;
+    font-size: 1.25em !important;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+
+#myForm button {
+    padding: 5px;
+    width: 20%;
+    margin: 30px;
+    font-size: 1.25em !important;
+    -webkit-box-shadow: 0px 8px 22px -1px rgba(0,0,0,0.75) !important;
+    -moz-box-shadow: 0px 8px 22px -1px rgba(0,0,0,0.75) !important;
+    box-shadow: 0px 8px 22px -1px rgba(0,0,0,0.75) !important;
+}
+
+#myForm button:hover{
+    border: solid 2px #d33b20;
+}
+
+
+.modal {
+    text-align: center;
+}
+
+.modal h4 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.modal-body p {
+    font-size: 1.33em;
+}
+
+.modal button {
+    margin-left: 5%;
+    float: left;
+    width: 20%;
+}
+
+#btnConfirmarTest{
+    margin-right: 5%;
+    float: right;
+}
+
+@media screen and (max-width: 767.5px){
+    input, select{
+        width: 80% !important;
+        text-align: center;
+    }
+    #myForm button {
+        width: 33%;
+    }
+
+
+    .modal button {
+        width: 30%;
+    }
+}
+
